@@ -10,7 +10,14 @@ h1{
 }
 h3{
     font-size: 24px;
+    text-align: center;
 }
 .container{
     display: block;
+}
+h2{
+    text-align: center;
+}
+.total-amount{
+    text-align: center;
 }
