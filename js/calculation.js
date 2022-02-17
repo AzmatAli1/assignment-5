@@ -4,7 +4,7 @@ document.getElementById('calculate-button').addEventListener('click', function()
     const foodCost = document.getElementById('food-input');
     const totalFoodAmount = foodCost.value;
     const totalFoodCost = parseFloat(totalFoodAmount);
-    console.log(totalFoodCost);
+    
 
 
     const rentCost = document.getElementById('rent-input');
@@ -19,17 +19,26 @@ document.getElementById('calculate-button').addEventListener('click', function()
 
     const calculateTotal = document.getElementById('expenses-input');
     calculateTotal.innerText = parseFloat(totalFoodCost + totalRentCost + totalClothesCost);
+    const cost = calculateTotal.innerText;
 
-
+// handle income and balance
     const income = document.getElementById('income-input');
-    const totalIncomeAmount = totalIncome.value;
+    const totalIncomeAmount = income.value;
     const totalIncome = parseFloat(totalIncomeAmount);
 
-
-    const balanceInput = document.getElementById('balance-input');
-    const balanceTotal = balanceInput.value;
-    const totalBalanceInput = totalIncome - calculateTotal;
-
+    const incomeTotal = totalIncome-cost;
+    const balanceTotal = document.getElementById('balance-input');
+    balanceTotal.innerText = incomeTotal;
+    
+  
 });
+
+document.getElementById('save').addEventListener('click', function(){
+    const saveInput = document.getElementById('save-input');
+    const totalSaveAmount = saveInput.value;
+    const totalSave = parseFloat(totalSaveAmount);
+    console.log('ok');
+})
+
 
 
