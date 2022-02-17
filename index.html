@@ -22,30 +22,44 @@
                         <img src="money-images.jpg"alt = "">
                         </div>
                         <div  class = "col-lg-6">
-                        <h3 class="font-weight-bold: 700">Income</h3>
+                        <h3 id = "income-button" class="font-weight-bold: 700">Income</h3>
                         <p><span class = "d-inline mx-2">Income:</span> 
-                    <input type="text"placeholder="amount"></p>
-                        
-                    <h2 class="font-weight-bold: 700">Expenses</h2>
-                    <p> <span class = "d-inline mx-3">Food: </span> 
-                        <input type="text"placeholder="amount"></p>
-                            
-                        <p> <span class = "d-inline mx-3">Rent: </span> 
-                        <input type="text"placeholder="amount"></p>
-                                
-                        <p> <span class = "d-inline mx-2">Clothes: </span> 
-                        <input type="text"placeholder="amount"></p>
-                                
-                        <button  type="button" class="btn btn-primary mx-5">Calculate</button>
-                       <h3>Total Expenses: 000 </h3>
-                       <h3>Balance: 000</h3>
-                       <p> <span class = "d-inline mx-2">save: </span> 
-                    
-                        <input type="text"placeholder="amount"> % <button type="button" class="btn btn-primary">save</button></p>
+                    <input id = "income-input" type="text"placeholder="amount"></p>
+
+
+
+                     <div>
+                        <h2 class="font-weight-bold: 700">Expenses</h2>
+                        <p> <span class = "d-inline mx-3">Food: </span> 
+                            <input id = "food-input"class ="" type="text"placeholder="amount"><p>   
+                            <p> <span class = "d-inline mx-3">Rent: </span> 
+                            <input id = "rent-input"type="text"placeholder="amount"></p>
+                                    
+                            <p> <span class = "d-inline mx-2">Clothes: </span> 
+                            <input id = "clothes-input"type="text"placeholder="amount"></p>
+                     </div>
+                   
+
+
+
+                        <div>
+                            <button id = "calculate-button" type="button" class="btn btn-primary mx-5">Calculate</button>
+                            <h3>Total Expenses: <span id = "expenses-input"> 000</span></h3>
+                            <h3>Balance: <span id = "balance-input"> 000</span></h3>
+                        </div>        
                        
-                       <h2>Saving Ammount: 000</h2>
-                       <h2>Remaining Balance: 000</h2>
-                </div>
+                        <div>
+                            <p> <span class = "d-inline mx-2">save: </span> 
+                                <input type="text"placeholder="amount"> % <button type="button" class="btn btn-primary">save</button></p>  
+                        </div>
+                       
+
+
+
+                       <div>
+                        <h2>Saving Ammount: 000</h2>
+                        <h2>Remaining Balance: 000</h2>
+                       </div> 
             </div>
         </section>
        
