@@ -22,44 +22,33 @@
                         <img src="money-images.jpg"alt = "">
                         </div>
                         <div  class = "col-lg-6">
-                        <h3 id = "income-button" class="font-weight-bold: 700">Income</h3>
-                        <p><span class = "d-inline mx-2">Income:</span> 
-                    <input id = "income-input" type="text"placeholder="amount"></p>
 
+                            <h2>Income</h2>
+                            <p class="d-inline p-margin">Income :</p>
+                            <input id="income" class="m-2 input-bg" type="text">
+                            <h2>Expenses</h2>
+                            <p class="d-inline">Food:</p>
+                            <input id="food-input" class="m-2 input-bg" type="text">
+                            <br>
+                            <p class="d-inline">Rent :</p>
+                            <input id="rent-input" class="m-2 input-bg" type="text">
+                            <br>
+                            <p class="d-inline p-margin">Clothes :</p>
+                            <input id="clothes-input" class="m-2 input-bg" type="text">
+                            <br>
+                            <p id="invalid-message" class="invalid-message">Invalid input</p>
+                            <p id="invalid-input" class="invalid-message">Please Cheek your Input</p>
+                            <button id="calculate-button" class="btn btn-success mb-3 px-5 fw-bold ">Calculate</button>
+                            <h2>Total Expenses: <span id="expenses-input">000</span></h2>
+                            <h5>Blance: <span id="balance">000</span></h5>
+                            <p class="d-inline">Save :</p>
+                            <input id="saving-input" class="m-2 input-bg saving-input" class="d-inline" type="text">
+                            <span>%</span>
+                            <button id="save" class="btn btn-info text-white fw-bold px-5 ms-3">save</button>
+                            <p id="invalid-save" class="invalid-save">Invalid input</p>
+                            <h2>Saving Amount: <span id="saving-amout">000</span></h2>
+                            <h2>Remaining Balance: <span id="remaining-balance">000</span></h2>
 
-
-                     <div>
-                        <h2 class="font-weight-bold: 700">Expenses</h2>
-                        <p> <span class = "d-inline mx-3">Food: </span> 
-                            <input id = "food-input"class ="" type="text"placeholder="amount"><p>   
-                            <p> <span class = "d-inline mx-3">Rent: </span> 
-                            <input id = "rent-input"type="text"placeholder="amount"></p>
-                                    
-                            <p> <span class = "d-inline mx-2">Clothes: </span> 
-                            <input id = "clothes-input"type="text"placeholder="amount"></p>
-                     </div>
-                   
-
-
-
-                        <div>
-                            <button id = "calculate-button" type="button" class="btn btn-primary mx-5">Calculate</button>
-                            <h3>Total Expenses: <span id = "expenses-input">000</span></h3>
-                            <h3>Balance: <span id = "balance-input">000</span></h3>
-                        </div>        
-                       
-                        <div>
-                            <p> <span class = "d-inline mx-2">save: </span> 
-                                <input type="text"placeholder="amount"> % <button type="button" class="btn btn-primary">save</button></p>  
-                        </div>
-                       
-
-
-
-                       <div>
-                        <h2>Saving Ammount:<span>000</span></h2>
-                        <h2>Remaining Balance:<span>000</span> </h2>
-                       </div> 
             </div>
         </section>
        
