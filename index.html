@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-5</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-5</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
     
-    
-</head>
-<body>
-    <header>
-        <section class = "container">
-            <h1>Money-Spinner</h1>
-        </section>
-    </header>
-            <section class="container">
-                <div class = "row">
-                    <div  class = "col-lg-6">
-                        <img src="money-images.jpg"alt = "">
-                        </div>
-                        <div  class = "col-lg-6">
-
-                            <h2>Income</h2>
-                            <p class="d-inline p-margin">Income :</p>
-                            <input id="income" class="m-2 input-bg" type="text">
-                            <h2>Expenses</h2>
+    <body>
+        <header>
+            <section class="container bg-light p-2">
+                <h1 class="text-center text-info fw-bold mt-3">Money Spinner</h1>
+            </section>
+            <section class="container bg-light p-3">
+                <div class="row">
+                    <div class="col-lg-6 p-5 my-3">
+                        <img src="money-images.jpg" width="600" height="550" alt="">
+                    </div>
+                    <div class="col-lg-6 p-3">
+                        <div class="text-center ms-5">
+                            <h3>Income</h3>
+                            <p class="d-inline margin">Income :</p>
+                            <input id="income" class="m-2 input-field" type="text">
+                            <h3>Expenses</h3>
                             <p class="d-inline">Food:</p>
-                            <input id="food-input" class="m-2 input-bg" type="text">
+                            <input id="food-cost" class="m-2 input-field" type="text">
                             <br>
                             <p class="d-inline">Rent :</p>
-                            <input id="rent-input" class="m-2 input-bg" type="text">
+                            <input id="rent-cost" class="m-2 input-field" type="text">
                             <br>
-                            <p class="d-inline p-margin">Clothes :</p>
-                            <input id="clothes-input" class="m-2 input-bg" type="text">
+                            <p class="d-inline margin">Clothes :</p>
+                            <input id="clothes-cost" class="m-2 input-field" type="text">
                             <br>
-                            <p id="invalid-message" class="invalid-message">Invalid input</p>
-                            <p id="invalid-input" class="invalid-message">Please Cheek your Input</p>
-                            <button id="calculate-button" class="btn btn-success mb-3 px-5 fw-bold ">Calculate</button>
-                            <h2>Total Expenses: <span id="expenses-input">000</span></h2>
-                            <h5>Blance: <span id="balance">000</span></h5>
+                            <p id="input-title" class="input-title">You give wrong Value</p>
+                            <p id="input-text" class="input-title">Input is Wrong</p>
+                            <button id="expenses" class="btn custom-btn mb-3 px-4 fw-bold fs-4 ">Calculate</button>
+                            <h3>Total Expenses: <span id="more-expenses">00</span></h3>
+                            <h3>Blance: <span id="balance">00</span></h3>
                             <p class="d-inline">Save :</p>
-                            <input id="saving-input" class="m-2 input-bg saving-input" class="d-inline" type="text">
+                            <input id="saving-input" class="m-2 input-field saving-input" class="d-inline" type="text">
                             <span>%</span>
-                            <button id="save" class="btn btn-info text-white fw-bold px-5 ms-3">save</button>
-                            <p id="invalid-save" class="invalid-save">Invalid input</p>
-                            <h2>Saving Amount: <span id="saving-amout">000</span></h2>
-                            <h2>Remaining Balance: <span id="remaining-balance">000</span></h2>
-
-            </div>
-        </section>
-       
-                
-        
-           
-    
-<script src="js/calculation.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+                            <button id="save-incom" class="btn custom-btn-m  fw-bold px-4 ms-3 px-3 fs-5">save</button>
+                            <p id="wrong-save" class="wrong-save">You give wrong Value</p>
+                            <h3>Saving Amount: <span id="saving-amout">00</span></h3>
+                            <h3>Remaining Balance: <span id="remaining-balance">00</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <script src="js/calculation.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    </body>
 </html>
